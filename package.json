@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "mongoose": "^7.2.2",
+    "nodemon": "^2.0.22"
+  },
+  "name": "goals",
+  "description": "A personal Project to help me out exploring the mern stack.",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anurag",
+  "license": "ISC"
+}
