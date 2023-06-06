@@ -10,6 +10,10 @@ const getGoals = (req, res) => {
 // @route   POST:   /api/newgoals
 // @access  private
 const newGoals = (req, res) => {
+    if (!req.body.text) {
+        res.status(400);
+        throw new Error("Error: Text field Empty")
+    }
     res.status(200);
     res.json({ message: "This is the message of the create request" })
 }
@@ -30,4 +34,4 @@ const deleteGoals = (req, res) => {
     res.json({ message: "This is the message of the delete request" })
 }
 
-module.exports = { getGoals,newGoals,updateGoals,deleteGoals }
+module.exports = { getGoals, newGoals, updateGoals, deleteGoals }
